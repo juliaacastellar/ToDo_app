@@ -1,11 +1,12 @@
 const express = require("express")
+const exphbs = require("express-handlebars")
 const app = express()
 
 //rotas
-app.get('/', (req, res) => {
-    res.send("olá mundinho")
-})
+app.engine("handlebars", exphbs.engine())
+app.set("view engine", "handlebars")
 
+app.get('/', (req, res) => {
+    res.send("olá mundinho")})
 app.listen(3000, () => {
-    console.log("Servidor rodando na porta 3000")
-})
+    console.log("Servidor rodando na porta 3000")})
