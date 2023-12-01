@@ -147,8 +147,6 @@ main{
     max-width: 33.75rem;
     margin-inline: auto;
 
-    /*PARAMOS AQUI*/
-
     display: flex;
     justify-content: center;
     gap: 1.2rem;
@@ -166,4 +164,21 @@ main{
         padding: 0;
         margin: 0;
     }
+
+    .tarefa button{
+        visibility: hidden;
+    }
+
+/*  .tarefa:hover, */
+    .tarefa input:hover, 
+    .tarefa label:hover,
+    .tarefa button:hover{
+        cursor: pointer
+    }
+
+
+    .tarefa:hover button{
+        visibility: initial;
+    }
+
 }
