@@ -11,8 +11,9 @@
     --placeholder-color: #9495a5;
     --input-box-shadow: rgba(194,195, 214, 0.58);
     --input-color: #494C6B;
-    --button-color-hover: #494C6B;
-    --button-color: #393a4b;
+    --input-bg:#fff;
+    --button-color-hover:#393a4b;
+    --button-color:#494C6B;
     --bg-body: #fafafa;
     --bg-tarefas: #fff;
     --box-shadow: 0px 35px 50px -15px rgba(194,195, 214, 0.58);
@@ -20,6 +21,25 @@
     --text-color: #494C6B;
     --info-text-color: #9495A5;
     --info-hover-button: #494C6B;
+    --info-button-active: #3a7cfd;
+}
+
+body.dark{
+    --bg-header-mobile: url(../imagens/bg-header-mobile-dark.png);
+    --bg-hearder-desktop: url(../imagens/bg-header-desktop-dark.png);
+    --input-box-shadow: rgba(0, 0, 0, 0.50);
+    --input-color: #c8cbe7;
+    --input-bg: #25273D;
+    --placeholder-color: #767992;
+    --button-color: #25273D;
+    --button-color-hover: #5b5e7e;
+    --bg-body: #171823;
+    --bg-tarefas: #25273D;
+    --box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.50);
+    --border-color: #393a4b;
+    --text-color: #c8cbe7;
+    --info-text-color: #5b5e7e;
+    --info-hover-button: #e3e4f1;
     --info-button-active: #3a7cfd;
 }
 
@@ -70,6 +90,7 @@ header form input{
     outline: none;
     font-size: 0.75rem;
     color: var(--input-color);
+    background: var(--input-bg);
 }
 
 header form input::placeholder{
