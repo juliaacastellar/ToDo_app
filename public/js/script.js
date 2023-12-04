@@ -77,5 +77,5 @@ function verificarTema(){
     }
 }
 
-/* aqui funcionou sem precisar chamar a função:
-function verificarTema()*/
+
+verificarTema()
